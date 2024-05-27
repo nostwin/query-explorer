@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>&#128216; Query Explorer</title>
+</head>
+<body>
+    <header class="header">
+        <h1>Query Explorer &#128270;</h1>
+    </header>
+    </div>
+    <main class="main">
+        <div class="left-section">
+            <div class="collection-menu">
+                <div class="collection-action">
+                    <span>Collections</span>
+                    <button>&#10010;</button>
+                </div>
+                <ul>
+                    <li><a href="#">All</a></li>
+                    <li><a href="#">Collection 1</a></li>
+                    <li><a href="#">Collection 2</a></li>
+                    <li><a href="#">Collection 1</a></li>
+                  </ul> 
+            </div>
+        </div>
+        <div class="center-section">
+            <div class="action-menu">
+                <button class="button" id="add">&#10010;</button>
+                <button class="button" id="bulk-download">&#129035;</button>
+                <input type="text" placeholder="Search..." id="search-bar">
+            </div>
+            <div class="item-list">
+
+                <div class="item">
+                    <div class="item-header">
+                        <div class="item-text">
+                            <h2 class='item-title'>AuditLogs - User Activities</h2>
+                            <p class='item-desc'>List all user activities</p>
+                            <p class='item-created-date'>22/05/2024</p>
+                        </div>
+                        <div class="item-action">
+                            <button class='button2'>&#128712;</button>
+                            <button class='button2'>&#129035;</button>
+                            <button class='button2'>&#128393;</button>
+                            <button class='button2'>&#128465;</button>
+                        </div>
+                    </div>
+                    <div class="item-footer">
+                        <div class='item-tags'>
+                            <span class="tag-cloud">customer: customer1</span>
+                            <span class="tag-cloud">siem: splunk</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-section">
+        </div>
+    </main>
+    <footer class="footer">
+    </footer>
+</body>
+</html>

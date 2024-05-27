@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #15191d;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    text-align: center;
+    gap: 2em;
+}
+
+
+.header {
+    font-size: 2em;
+    margin-top: 1%;
+}
+
+.header h1 {
+    font-weight: bold;
+    height: 2em;
+}
+
+.main {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+    display: flex;
+    gap: 3em;
+    flex-direction: column;
+    border-color: red;
+    border-width: 1em;
+}
+
+.footer {
+    background-color: #313b4b;
+    height: 2.5em;
+}
+
+.action-menu {
+    background-color: #313b4b;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 10px;
+    height: 3em;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5em;
+    justify-content: center;
+}
+
+.item-list {
+    border-radius: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+#search-bar {
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    margin: 8px 0;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: .3s;
+    width: 50%;
+    background-color: #313b4b;
+    color: #fff;
+    font-size: 1.2em;
+    justify-self: center;
+}
+
+#search-bar:focus {
+    border-color: lightblue;
+    box-shadow: 0 0 5px lightblue;
+}
+
+.item {
+    border: 1px solid white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px lightskyblue;
+    text-align: center;
+    text-align: left;
+    padding: 1em;
+    background-color: #313b4b;
+}
+
+.item .item-header {
+    display: flex;
+    align-items: center;
+}
+
+.item .item-header .item-text {
+    flex-grow: 1;
+}
+
+.item .item-header .item-desc {
+    flex-grow: 1;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+
+.item .item-header .item-action {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    flex-direction: row;
+    margin-left: 2%;
+}
+
+.item .item-title {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.item .item-desc {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+
+.tag-cloud {
+    display: inline-block;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 25px;
+    background-color: #2196F3;
+    margin-top: 8px;
+}
+
+.tag-cloud:hover {
+    opacity: 0.5;
+}
+
+
+.button {
+    background-color:#0784b5;
+    border: none;
+    color: white;
+    min-width: 4%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 4px;
+}
+  
+.button:hover {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.button2 {
+    background-color: #0784b5; 
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10%;
+    width: 45px;
+    height: 45px;
+    font-size: 200%;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+}
+
+.center-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 1.5em;
+    width: 85%;
+}
+
+.left-section {
+    width: 15%;
+
+}
+
+.right-section {
+    width: 15%;
+}
+
+.left-section ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #414c50;
+    text-align: left;
+    border-radius: 10px;
+    color: white;
+}
+
+li a {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: white;
+}
+
+    li a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.item-created-date {
+    font-style: italic;
+}
+
+.collection-menu {
+    background-color: #313b4b;
+    padding: 5%;
+    border-radius: 10px;
+    margin-left: 10%;
+    border-width: 1px;
+}
+
+.collection-action {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    margin-bottom: 5%;
+    flex-wrap: wrap;
+}
+
+.collection-action button {
+    border: none;
+    padding: 1%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 4px;
+    background-color: transparent;
+    color: white;
+}
+
+.collection-action span {
+    font-weight: bold;
+}
+
+
